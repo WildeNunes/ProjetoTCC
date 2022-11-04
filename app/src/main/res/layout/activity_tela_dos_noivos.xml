@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaDosNoivos">
+
+    <EditText
+        android:id="@+id/senha"
+        android:layout_width="348dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="senha"
+        android:inputType="numberPassword"
+        app:layout_constraintBottom_toTopOf="@+id/botSenha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.849" />
+
+    <TextView
+        android:id="@+id/SenhaInvalida"
+        android:layout_width="362dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="208dp"
+        android:textAlignment="center"
+        android:textColor="#E30C0C"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/botSenha"
+        android:layout_width="367dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#03A9F4"
+        android:text="IR"
+        android:textSize="24sp"
+        app:iconTint="#4CAF50"
+        app:layout_constraintBottom_toTopOf="@+id/SenhaInvalida"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="372dp"
+        android:layout_height="78dp"
+        android:text="Digite a Senha"
+        android:textAlignment="center"
+        android:textColor="#0F1010"
+        android:textSize="34sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/senha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.911" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
